@@ -1,0 +1,47 @@
+{
+  "method": "Three non-explicit, fully clothed romance/fashion scenarios. One first sample per engine; these do not verify refusal behavior for explicit content.",
+  "cases": [
+    {
+      "id": "romance-walk",
+      "title": "Romantic walk under one umbrella",
+      "category": "Non-explicit romance and fashion",
+      "prompt": "Create one square 1024 by 1024 photorealistic cinematic editorial photograph of a fictional adult couple, a woman aged 30 and a man aged 35, walking hand in hand along a rain-wet city street at dusk. They share exactly ONE navy-blue umbrella. The woman wears an opaque cream trench coat, dark full-length trousers and ankle boots; the man wears an opaque navy wool coat, full-length trousers and shoes. Both are fully clothed. They turn toward each other with warm, gentle smiles. One of them holds the umbrella while their other hands meet in a natural handhold. Show both complete figures from head to shoes, with believable walking balance, anatomically natural hands and coherent umbrella structure. Warm street lamps contrast with cool evening light, reflecting on wet pavement. Soft city background without other people in focus. Affectionate everyday romance, tasteful and non-explicit. No nudity, no sexual activity, no text, no logos, no watermark.",
+      "checks": [
+        "Exactly two clearly adult people, both fully clothed in the specified outerwear.",
+        "Exactly one shared navy umbrella, with coherent structure and a plausible grip.",
+        "The couple holds hands naturally without merged or extra hands.",
+        "Both complete figures and shoes are visible; walking poses are balanced.",
+        "Warm affectionate interaction, wet pavement and coherent evening lighting."
+      ],
+      "quality": "Facial expression, human proportions, hand contact, umbrella geometry, clothing and wet reflections."
+    },
+    {
+      "id": "romantic-portrait",
+      "title": "Affectionate close-up couple portrait",
+      "category": "Non-explicit romance and fashion",
+      "prompt": "Create one square 1024 by 1024 photorealistic intimate but non-explicit editorial portrait of a fictional adult woman and adult man, both in their mid-thirties. A close-up frames their heads and clothed shoulders as they gently rest their foreheads together, eyes closed, with small relaxed smiles. The woman wears an opaque teal crew-neck top and the man wears an opaque tan crew-neck sweater. Both are fully clothed; show no bare torso. Their faces remain distinct, with naturally separate noses, lips, eyelashes and skin surfaces, without merged anatomy. Use a simple softly blurred neutral studio background and gentle window daylight from the left. Natural skin pores, fine hair, realistic facial proportions and soft shadow transitions, like a high-end 85mm portrait photograph. The mood is emotional closeness and affection rather than sexual posing. No nudity, no sexual activity, no text, no logos, no watermark.",
+      "checks": [
+        "Two clearly adult faces, framed with clothed shoulders in teal and tan crew-neck garments.",
+        "Foreheads touch gently, with closed eyes and relaxed smiles.",
+        "Noses, lips and faces remain distinct without merged or duplicated features.",
+        "Both heads remain adequately framed and expressions read as affectionate.",
+        "Natural skin, hair and soft window lighting; no explicit content or bare torso."
+      ],
+      "quality": "Subtle expressions, facial anatomy at close contact, natural texture, focus and lighting."
+    },
+    {
+      "id": "fashion-evening",
+      "title": "Fully clothed evening-fashion editorial",
+      "category": "Non-explicit romance and fashion",
+      "prompt": "Create one square 1024 by 1024 high-end editorial fashion photograph of a fictional 35-year-old woman standing in an elegant Art Deco hotel lobby at night. Show her complete figure from head to shoes in a relaxed, confident, natural standing pose. She wears an emerald-green floor-length satin evening gown with a high neckline and full-length sleeves. The fabric is completely opaque and her torso and legs remain fully covered. One hand holds a small black rectangular clutch; the other rests naturally at her side. She wears exactly one simple silver bangle, with no other jewellery. Render realistic satin folds and highlights, natural hand anatomy, refined but believable facial features, polished dark stone floors and warm brass wall lamps. Controlled cinematic lighting with a soft key light on the face and subtle lobby reflections. Fashion and garment craftsmanship are the focus; tasteful, fully clothed and non-explicit. No nudity, no sexual activity, no provocative pose, no text, no logos, no watermark.",
+      "checks": [
+        "One clearly adult woman, with the full figure and shoes in frame.",
+        "Opaque emerald gown has a high neckline, long sleeves and floor-length coverage.",
+        "One black rectangular clutch, held with plausible hand anatomy.",
+        "Exactly one silver bangle and no other jewellery.",
+        "Natural standing balance, coherent satin folds and an Art Deco lobby with warm lamps."
+      ],
+      "quality": "Garment construction and coverage, fabric reflections, hands, pose, facial realism and environment."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "engine": "built-in image_gen",
+  "timing_scope": "Client-observed tool round trip; includes service latency, processing and transfer. Hardware, model version, seed and sampler are not exposed.",
+  "runs": [
+    {
+      "id": "typography",
+      "started_utc": "2026-10-27T15:46:52.415Z",
+      "elapsed_seconds": 25.885,
+      "image_file": "scenarios/cloud/typography.png",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_sha256": "9ae48639ab2503dbc3ebbbb50c3a7fb62ae8a235f9006404cd343a07a7efe87e",
+      "prompt_file": "scenarios/prompts/typography.txt"
+    },
+    {
+      "id": "composition",
+      "started_utc": "2026-10-27T15:47:57.165Z",
+      "elapsed_seconds": 17.455,
+      "image_file": "scenarios/cloud/composition.png",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_sha256": "a4993dd537961c989516582c343de59860480cb4bb481a8d75001e0b7bd4000f",
+      "prompt_file": "scenarios/prompts/composition.txt"
+    },
+    {
+      "id": "portrait",
+      "started_utc": "2026-10-27T15:49:08.736Z",
+      "elapsed_seconds": 39.987,
+      "image_file": "scenarios/cloud/portrait.png",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_sha256": "e627fd4ed16aa01a94a8e9bbe771e0c048125d3d4c3a158cd1da9dc7204a1d41",
+      "prompt_file": "scenarios/prompts/portrait.txt"
+    },
+    {
+      "id": "hands",
+      "started_utc": "2026-10-27T15:50:34.528Z",
+      "elapsed_seconds": 24.43,
+      "image_file": "scenarios/cloud/hands.png",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_sha256": "5bb19513b17784d4540525df42db2a713efcf259dc3d895ec262908095710eb3",
+      "prompt_file": "scenarios/prompts/hands.txt"
+    },
+    {
+      "id": "romance-walk",
+      "started_utc": "2026-10-27T16:02:21.865Z",
+      "elapsed_seconds": 25.876,
+      "image_file": "scenarios/cloud/romance-walk.png",
+      "prompt_sha256": "fb3b606a95843326b629afebcca4b0c4e23280c4e57f2cdbad3eb70b2521ab05",
+      "prompt_file": "scenarios/prompts/romance-walk.txt",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "romantic-portrait",
+      "started_utc": "2026-10-27T16:03:21.556Z",
+      "elapsed_seconds": 37.226,
+      "image_file": "scenarios/cloud/romantic-portrait.png",
+      "prompt_sha256": "23700b59c304d26d62811772ead6f147c36d291b5375f3daf310faca3822b425",
+      "prompt_file": "scenarios/prompts/romantic-portrait.txt",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "fashion-evening",
+      "started_utc": "2026-10-27T16:04:58.481Z",
+      "elapsed_seconds": 38.888,
+      "image_file": "scenarios/cloud/fashion-evening.png",
+      "prompt_sha256": "754e5b88bf9abde70ed4c5f17bd7ae8e62bbcead738962135508be372ace72e9",
+      "prompt_file": "scenarios/prompts/fashion-evening.txt",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "draft-512-10": {
+    "oranges": 2,
+    "exact_two_line_sign": false,
+    "observation": "Two oranges instead of three. Sign words are readable, but split across four lines. Most of the face is cropped. Rain, green apron, glass and wooden counter are present."
+  },
+  "balanced-768-20": {
+    "oranges": 4,
+    "exact_two_line_sign": true,
+    "observation": "Four oranges instead of three. Correct two-line sign, a complete face, clear milk stream and coherent hands. Rain, warm/cool lighting, ceramic, metal and glass read well."
+  },
+  "detail-1024-25": {
+    "oranges": 3,
+    "exact_two_line_sign": true,
+    "observation": "Exactly three oranges and the correct two-line sign. Complete face, both hands and a clear milk stream. Strong scene adherence, realistic rain and reflective materials; skin looks somewhat grainy."
+  },
+  "quality-1024-40": {
+    "oranges": 3,
+    "exact_two_line_sign": true,
+    "observation": "Exactly three oranges and the correct two-line sign. Similar successful composition to 25 steps; finer differences in pose, skin, fabric and reflections rather than a major improvement in scene adherence."
+  },
+  "guidance-1024-25-cfg6": {
+    "oranges": 3,
+    "exact_two_line_sign": true,
+    "observation": "Exactly three oranges and the correct two-line sign. Stronger saturation and contrast than CFG 1, with a thicker-looking milk stream. No clear scene-adherence gain for the additional runtime on this prompt."
+  },
+  "decode-1024-25-tile512": {
+    "oranges": 3,
+    "exact_two_line_sign": true,
+    "observation": "Exactly three oranges and the correct two-line sign. Preserves the successful 25-step composition. The 512-pixel decoding tile completed as nine tiles without a logged fallback, using more VRAM and much less decoding time. Best observed speed/quality tradeoff among the tested local presets."
+  },
+  "detail-1024-25-repeat2": {
+    "oranges": 3,
+    "exact_two_line_sign": true,
+    "pixels_identical_to_first_baseline": true,
+    "observation": "Pixel-identical to the first 1024/25 baseline. Total time dropped from 183.3 to 127.1 seconds, with faster loading, encoding, sampling and decoding phases. This demonstrates why single-run total times should not be treated as a controlled step-count comparison."
+  }
+}

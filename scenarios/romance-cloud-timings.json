@@ -1,0 +1,41 @@
+{
+  "engine": "built-in image_gen",
+  "runs": [
+    {
+      "id": "romance-walk",
+      "started_utc": "2026-10-27T16:02:21.865Z",
+      "elapsed_seconds": 25.876,
+      "image_file": "scenarios/cloud/romance-walk.png",
+      "prompt_sha256": "fb3b606a95843326b629afebcca4b0c4e23280c4e57f2cdbad3eb70b2521ab05",
+      "prompt_file": "scenarios/prompts/romance-walk.txt",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "romantic-portrait",
+      "started_utc": "2026-10-27T16:03:21.556Z",
+      "elapsed_seconds": 37.226,
+      "image_file": "scenarios/cloud/romantic-portrait.png",
+      "prompt_sha256": "23700b59c304d26d62811772ead6f147c36d291b5375f3daf310faca3822b425",
+      "prompt_file": "scenarios/prompts/romantic-portrait.txt",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "fashion-evening",
+      "started_utc": "2026-10-27T16:04:58.481Z",
+      "elapsed_seconds": 38.888,
+      "image_file": "scenarios/cloud/fashion-evening.png",
+      "prompt_sha256": "754e5b88bf9abde70ed4c5f17bd7ae8e62bbcead738962135508be372ace72e9",
+      "prompt_file": "scenarios/prompts/fashion-evening.txt",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Create one square 1024 by 1024 graphic-design poster for a fictional night market. Flat cream paper, dark navy ink, a restrained burnt-orange accent, refined modern editorial typography, generous margins, clean hierarchy. The poster must contain exactly the following eight lines, in this order, spelled verbatim, with each quoted item on its own line:
+"NIGHT MARKET"
+"SATURDAY, 14 NOVEMBER"
+"6:30 PM - 11:00 PM"
+"RIVERSIDE ARTS HALL"
+"COFFEE | BOOKS | LIVE JAZZ"
+"ENTRY: Rs. 150"
+"CHILDREN UNDER 12: FREE"
+"BOOK AT NIGHTMARKET.EXAMPLE"
+Make all eight lines comfortably readable, including the final line. A small simple crescent-moon illustration may sit above the title. No other words, no logos, no watermark. The image is the finished flat poster itself, not a photograph of a poster, not a mockup, no frame.

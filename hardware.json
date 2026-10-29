@@ -1,0 +1,9 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "memory": {
+    "system_total_bytes": 34049417216,
+    "system_available_bytes": 10624049152
+  },
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU, 8192 MiB, 610.62"
+}

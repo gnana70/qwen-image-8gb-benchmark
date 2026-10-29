@@ -1,0 +1,191 @@
+{
+  "method": "Manual visual inspection against the checklist saved before generation. Pass/partial/fail are per-image observations, not official benchmark scores. Quality notes are subjective; no automatic OCR, detector, FID or GenEval score was run.",
+  "cases": {
+    "typography": {
+      "summary": "Cloud reproduces all eight lines; Qwen gets seven exactly and misspells the final address.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "All eight text lines are legible and in the requested order, including date, punctuation, Rs. 150, and the final address. More decorative market artwork than the restrained editorial brief.",
+        "quality": "Strong hierarchy and readable text. Ornate illustrated treatment rather than the most minimal interpretation."
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "fail",
+          "pass"
+        ],
+        "observation": "Seven of eight lines are correct. The last line reads 'BOOK AT NIGHTMARKETET.EXEIAMPLE' instead of 'BOOK AT NIGHTMARKET.EXAMPLE' (corrected after re-inspection for the video; originally marked pass). The large title has very tight word separation; the pipe separators are drawn as tall rules.",
+        "quality": "Clean, restrained cream/navy layout with a small orange moon. Large blank areas and very tight title spacing are the main design tradeoffs."
+      }
+    },
+    "composition": {
+      "summary": "Both get the counts and colours. Qwen overlaps the rings and slightly slopes the marble row.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "One red cube, blue sphere and yellow cone in order; five green marbles in a horizontal front row; two separated orange rings behind the cube. No extra objects.",
+        "quality": "Crisp objects, clean separation, convincing glass marbles and soft shadows."
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "partial",
+          "pass",
+          "fail"
+        ],
+        "observation": "All requested counts and colours are correct. The five-marble row slopes slightly in image space. The two orange rings touch/overlap, violating the explicit separation requirement.",
+        "quality": "Coherent lighting and shapes. Back rings are soft-focused despite the crisp-focus request; the cone apex is slightly blunted."
+      }
+    },
+    "portrait": {
+      "summary": "Both produce convincing close-up portraits with the requested details.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Older woman with grey hair, brown eyes, closed lips, a visible silver stud and coherent eye catchlights. Both eyes, nose, mouth and one ear are visible.",
+        "quality": "Rich pores, wrinkles, age spots and fine hair detail. More visible microtexture, with a larger returned resolution than Qwen."
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Older woman with grey hair, brown eyes, closed lips, visible silver studs and coherent catchlights. Face and ears remain visible.",
+        "quality": "Natural skin and hair, a slightly smoother surface appearance than the cloud output, and a convincing photographic result. Exact age or ethnicity is not visually scored."
+      }
+    },
+    "hands": {
+      "summary": "Both render plausible ten-fingered hands. Cloud preserves the piano-key grouping; Qwen does not.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two fully visible hands, five fingers each, plausible key contact. Visible black-key groups alternate two and three across the keyboard, apart from cropped edge fragments.",
+        "quality": "Believable joints, skin folds, nails and lacquer reflections. A little clothing/lap is visible near the bottom; no face, extra person, jewellery or text."
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "fail",
+          "pass"
+        ],
+        "observation": "Two complete hands with five plausible fingers each and no obvious hand/key fusion. Black keys form incorrect adjacent three-key groups, breaking the required two-three alternation.",
+        "quality": "Clean hands and convincing materials; flatter, more stretched playing pose. The keyboard structure is the decisive instruction-following error."
+      }
+    },
+    "romance-walk": {
+      "summary": "Both generate the fully clothed couple and shared umbrella. Qwen misses the handhold.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two fully clothed adults, one shared navy umbrella, visible linked hands and full figures including shoes. The umbrella grip and walking poses are plausible.",
+        "quality": "Strong warm/cool evening lighting, lively expressions and convincing wet-pavement reflections.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "fail",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two fully clothed adults and one navy umbrella, with complete figures and shoes. The couple smiles at each other, but their free hands do not meet: the explicit hand-holding action is missing.",
+        "quality": "Convincing street scene, clothing and expressions. Clear action-adherence failure despite an otherwise coherent image.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      }
+    },
+    "romantic-portrait": {
+      "summary": "Both generate the affectionate forehead-touch portrait with coherent faces and clothing.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two adult faces with closed eyes and gentle smiles, touching foreheads, separate facial features, and the requested teal and tan crew-neck clothing.",
+        "quality": "Rich hair and skin detail, soft light and a convincing affectionate expression. Top hair is close to the image boundary, while faces remain clearly framed.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Closed eyes, slight smiles and touching foreheads. Noses remain distinct despite close contact; clothed shoulders and the requested garment colours are clear.",
+        "quality": "Natural faces, hair and soft lighting. Slightly smoother skin appearance than the cloud reference, which has a higher returned resolution.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      }
+    },
+    "fashion-evening": {
+      "summary": "Both generate opaque green gowns. Qwen shortens the sleeves and adds jewellery.",
+      "cloud": {
+        "checks": [
+          "partial",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Full figure is in frame, but the floor-length hem hides most footwear. Opaque high-neck, long-sleeve emerald gown, black clutch and one silver bangle are present; no obvious extra jewellery.",
+        "quality": "Strong satin folds, warm geometric lobby lights and polished-floor reflections. Fashion proportions are elongated, and most shoes are concealed by the hem.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      },
+      "qwen": {
+        "checks": [
+          "partial",
+          "partial",
+          "pass",
+          "fail",
+          "pass"
+        ],
+        "observation": "Full figure is framed, with footwear mostly hidden by the hem. The gown is opaque and emerald, but sleeves are pushed up to the forearms and the neckline is round rather than a clear high collar. Earrings and a ring appear in addition to the silver bangle, violating the no-other-jewellery instruction.",
+        "quality": "Convincing satin, face and lobby atmosphere. Garment-detail and jewellery adherence are the main shortfalls, rather than failure to generate the scene.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      }
+    }
+  },
+  "correction_note": "2026-10-27: typography/qwen check 3 changed from pass to fail after re-inspecting the image."
+}

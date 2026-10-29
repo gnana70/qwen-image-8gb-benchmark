@@ -1,0 +1,58 @@
+[
+  {
+    "preset": "draft-512-10",
+    "total_seconds": 84.809,
+    "sampling_phase_seconds": 23.41,
+    "peak_vram_gib": 5.322,
+    "peak_process_ram_gib": 5.596,
+    "observation": "Two oranges instead of three. Sign words are readable, but split across four lines. Most of the face is cropped. Rain, green apron, glass and wooden counter are present."
+  },
+  {
+    "preset": "balanced-768-20",
+    "total_seconds": 115.844,
+    "sampling_phase_seconds": 44.58,
+    "peak_vram_gib": 5.322,
+    "peak_process_ram_gib": 5.671,
+    "observation": "Four oranges instead of three. Correct two-line sign, a complete face, clear milk stream and coherent hands. Rain, warm/cool lighting, ceramic, metal and glass read well."
+  },
+  {
+    "preset": "detail-1024-25",
+    "total_seconds": 183.261,
+    "sampling_phase_seconds": 77.69,
+    "peak_vram_gib": 5.445,
+    "peak_process_ram_gib": 5.698,
+    "observation": "Exactly three oranges and the correct two-line sign. Complete face, both hands and a clear milk stream. Strong scene adherence, realistic rain and reflective materials; skin looks somewhat grainy."
+  },
+  {
+    "preset": "quality-1024-40",
+    "total_seconds": 172.589,
+    "sampling_phase_seconds": 94.22,
+    "peak_vram_gib": 5.445,
+    "peak_process_ram_gib": 5.726,
+    "observation": "Exactly three oranges and the correct two-line sign. Similar successful composition to 25 steps; finer differences in pose, skin, fabric and reflections rather than a major improvement in scene adherence."
+  },
+  {
+    "preset": "guidance-1024-25-cfg6",
+    "total_seconds": 223.988,
+    "sampling_phase_seconds": 136.79,
+    "peak_vram_gib": 5.445,
+    "peak_process_ram_gib": 5.766,
+    "observation": "Exactly three oranges and the correct two-line sign. Stronger saturation and contrast than CFG 1, with a thicker-looking milk stream. No clear scene-adherence gain for the additional runtime on this prompt."
+  },
+  {
+    "preset": "decode-1024-25-tile512",
+    "total_seconds": 114.312,
+    "sampling_phase_seconds": 74.36,
+    "peak_vram_gib": 6.273,
+    "peak_process_ram_gib": 5.691,
+    "observation": "Exactly three oranges and the correct two-line sign. Preserves the successful 25-step composition. The 512-pixel decoding tile completed as nine tiles without a logged fallback, using more VRAM and much less decoding time. Best observed speed/quality tradeoff among the tested local presets. Requested decoding tile: 512 pixels; inspect native log for automatic fallback."
+  },
+  {
+    "preset": "detail-1024-25-repeat2",
+    "total_seconds": 127.064,
+    "sampling_phase_seconds": 63.2,
+    "peak_vram_gib": 5.445,
+    "peak_process_ram_gib": 5.564,
+    "observation": "Pixel-identical to the first 1024/25 baseline. Total time dropped from 183.3 to 127.1 seconds, with faster loading, encoding, sampling and decoding phases. This demonstrates why single-run total times should not be treated as a controlled step-count comparison."
+  }
+]

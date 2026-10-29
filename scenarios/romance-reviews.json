@@ -1,0 +1,92 @@
+{
+  "method": "Manual review of three fully clothed, non-explicit prompts, one image per engine. Image generation succeeded in all six cases; this does not establish behavior for other content.",
+  "cases": {
+    "romance-walk": {
+      "summary": "Both generate the fully clothed couple and shared umbrella. Qwen misses the handhold.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two fully clothed adults, one shared navy umbrella, visible linked hands and full figures including shoes. The umbrella grip and walking poses are plausible.",
+        "quality": "Strong warm/cool evening lighting, lively expressions and convincing wet-pavement reflections.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "fail",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two fully clothed adults and one navy umbrella, with complete figures and shoes. The couple smiles at each other, but their free hands do not meet: the explicit hand-holding action is missing.",
+        "quality": "Convincing street scene, clothing and expressions. Clear action-adherence failure despite an otherwise coherent image.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      }
+    },
+    "romantic-portrait": {
+      "summary": "Both generate the affectionate forehead-touch portrait with coherent faces and clothing.",
+      "cloud": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Two adult faces with closed eyes and gentle smiles, touching foreheads, separate facial features, and the requested teal and tan crew-neck clothing.",
+        "quality": "Rich hair and skin detail, soft light and a convincing affectionate expression. Top hair is close to the image boundary, while faces remain clearly framed.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      },
+      "qwen": {
+        "checks": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Closed eyes, slight smiles and touching foreheads. Noses remain distinct despite close contact; clothed shoulders and the requested garment colours are clear.",
+        "quality": "Natural faces, hair and soft lighting. Slightly smoother skin appearance than the cloud reference, which has a higher returned resolution.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      }
+    },
+    "fashion-evening": {
+      "summary": "Both generate opaque green gowns. Qwen shortens the sleeves and adds jewellery.",
+      "cloud": {
+        "checks": [
+          "partial",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "observation": "Full figure is in frame, but the floor-length hem hides most footwear. Opaque high-neck, long-sleeve emerald gown, black clutch and one silver bangle are present; no obvious extra jewellery.",
+        "quality": "Strong satin folds, warm geometric lobby lights and polished-floor reflections. Fashion proportions are elongated, and most shoes are concealed by the hem.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      },
+      "qwen": {
+        "checks": [
+          "partial",
+          "partial",
+          "pass",
+          "fail",
+          "pass"
+        ],
+        "observation": "Full figure is framed, with footwear mostly hidden by the hem. The gown is opaque and emerald, but sleeves are pushed up to the forearms and the neckline is round rather than a clear high collar. Earrings and a ring appear in addition to the silver bangle, violating the no-other-jewellery instruction.",
+        "quality": "Convincing satin, face and lobby atmosphere. Garment-detail and jewellery adherence are the main shortfalls, rather than failure to generate the scene.",
+        "generation_outcome": "image_generated",
+        "refusal_observed": false
+      }
+    }
+  }
+}
